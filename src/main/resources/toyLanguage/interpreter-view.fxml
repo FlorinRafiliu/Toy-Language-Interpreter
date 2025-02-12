@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="551.0" prefWidth="920.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="21.0" layoutY="32.0" text="Program States:" />
+      <TextField fx:id="prgStateTextField" editable="false" layoutX="109.0" layoutY="28.0" prefHeight="25.0" prefWidth="37.0" />
+      <TableView fx:id="heapTableView" layoutX="21.0" layoutY="80.0" prefHeight="200.0" prefWidth="149.0">
+        <columns>
+          <TableColumn fx:id="addressColumn" prefWidth="71.28570365905762" text="Address" />
+          <TableColumn fx:id="valueHeapColumn" prefWidth="77.42859649658203" text="Value" />
+        </columns>
+      </TableView>
+      <Label layoutX="58.0" layoutY="63.0" prefHeight="17.0" prefWidth="75.0" text="Heap Table" />
+      <ListView fx:id="outListView" layoutX="197.0" layoutY="80.0" prefHeight="200.0" prefWidth="149.0" />
+      <Label layoutX="250.0" layoutY="63.0" text="Out List" />
+      <ListView fx:id="fileTableListView" layoutX="370.0" layoutY="80.0" prefHeight="200.0" prefWidth="149.0" />
+      <Label layoutX="419.0" layoutY="63.0" text="File Table" />
+      <ListView fx:id="prgStatesListView" layoutX="650.0" layoutY="320.0" onMouseClicked="#onMouseClickedHandler" prefHeight="148.0" prefWidth="149.0" />
+      <Label layoutX="647.0" layoutY="303.0" prefHeight="17.0" prefWidth="155.0" text="Program States Identifiers" />
+      <TableView fx:id="symTableView" layoutX="21.0" layoutY="320.0" prefHeight="200.0" prefWidth="149.0">
+        <columns>
+          <TableColumn fx:id="valueColumn" prefWidth="74.4285888671875" text="Value" />
+          <TableColumn fx:id="nameColumn" prefWidth="73.0" text="Name" />
+        </columns>
+      </TableView>
+      <Label layoutX="68.0" layoutY="303.0" text="Sym Table" />
+      <ListView fx:id="execStackListView" layoutX="191.0" layoutY="320.0" prefHeight="200.0" prefWidth="331.0" />
+      <Label layoutX="331.0" layoutY="303.0" text="Exec Stack" />
+      <Button fx:id="runOneStepButton" layoutX="667.0" layoutY="473.0" mnemonicParsing="false" onAction="#runOneStepButtonHandler" prefHeight="46.0" prefWidth="115.0" text="Run one step" />
+      <TextField fx:id="statementTextField" layoutX="197.0" layoutY="28.0" prefHeight="25.0" prefWidth="322.0" />
+      <TableView fx:id="latchTableView" layoutX="542.0" layoutY="80.0" prefHeight="200.0" prefWidth="149.0">
+        <columns>
+          <TableColumn fx:id="locationLatchColumn" prefWidth="75.0" text="Location" />
+          <TableColumn fx:id="valueLatchColumn" prefWidth="75.0" text="Value" />
+        </columns>
+      </TableView>
+      <Label layoutX="542.0" layoutY="63.0" text="Latch Table" />
+      <TableView fx:id="semaphoreTableView" layoutX="706.0" layoutY="80.0" prefHeight="200.0" prefWidth="200.0">
+          <columns>
+              <TableColumn fx:id="semIndexColumn" prefWidth="39.71429443359375" text="Index" />
+              <TableColumn fx:id="semValueColumn" prefWidth="39.85711669921875" text="Value" />
+              <TableColumn fx:id="semValuesColumn" prefWidth="120.71429443359375" text="Values" />
+          </columns>
+      </TableView>
+      <Label layoutX="706.0" layoutY="63.0" text="SemaphoreTable" />
+   </children>
+</AnchorPane>
