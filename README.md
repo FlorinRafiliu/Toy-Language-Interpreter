@@ -11,5 +11,4 @@
 3. Functional Programming in Java
 5. MVC architecture
 6. GUI Development with JavaFx: Designed a graphical interface in JavaFx
-7. UML Design: Created a UML class diagram to document and visualize the architecture, improving project organization and communication
-8. A better understanding of how an interpreter work.
+7. A better understanding of how an interpreter work.
